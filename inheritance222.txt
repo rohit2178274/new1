@@ -1,0 +1,44 @@
+'''
+class Car():
+    def __init__(self,name,modelNo,yearm,price):
+        self.carname = name
+        self.modelno = modelNo
+        self.yrm = yearm
+        self.carprice = price
+    def price_inc(self):
+        self.priceofCar = int(self.carprice*2)
+
+tata = Car('safari','302',2021,1000000)
+print(tata.carprice)
+print(tata.carname)
+print(tata.__dict__)
+tata.price_inc()
+print(tata.priceofCar)
+'''
+
+'''
+class Parent():
+    def func1(self):
+        print("this is fiest function")
+
+class Child(Parent):
+    def func(self):
+        print("this is second function")
+obj = Child()
+print(obj.fun1c())
+'''
+#multiple inheritance in python
+class Parent:
+    def func(self):
+        print("this is parent class")
+class Parent2(Parent):
+    def func2(self):
+        print("this is scecond parent class")
+class Child(Parent2):
+    def func(self):
+        print("this is child class")
+
+obj = Child()
+obj1 = Parent2()
+obj.func2()
+print(obj)
